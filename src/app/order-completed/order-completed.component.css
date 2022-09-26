@@ -1,0 +1,10 @@
+.order-completed {
+    margin: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-primary {
+    width: fit-content;
+}

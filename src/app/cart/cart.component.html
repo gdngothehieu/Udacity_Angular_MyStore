@@ -1,0 +1,8 @@
+<div class='cart-main' fxLayout='row' fxLayoutGap='100px' fxLayoutAlign="center center">
+    <div class='cart-container' fxLayout='column'>
+        <app-product-item-cart *ngFor='let c of cart | keyvalue' [product]='getProduct(c.key)' [quantity]='c.value'>
+        </app-product-item-cart>
+        <h1 [innerText]='"Total: $" + getTotalPrice()'></h1>
+    </div>
+    <app-order></app-order>
+</div>

@@ -1,0 +1,17 @@
+<div class='detail-container'>
+    <img class='product-image' src={{product.url}}>
+    <div class='product-detail box'>
+        <h2 class='product-detail title'>
+            {{product.name}}
+        </h2>
+        <h3 class='product-detail price'>
+            ${{product.price}}
+        </h3>
+        <p class='product-detail description'>
+            {{product.description}}
+        </p>
+        <input class='product-detail select-input' type='number' min=1 max=20 value=1 [(ngModel)]="selectInput">
+        <button class='product-detail btn' (click)='addToCart()'>Add to cart</button>
+        <a class='product-detail back-link' (click)='goBack()'>&larr; Back to products</a>
+    </div>
+</div>

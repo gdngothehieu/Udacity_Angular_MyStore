@@ -1,0 +1,14 @@
+<div class='detail-container'>
+    <img class='product-image' src={{product.url}}>
+    <div class='product-detail box'>
+        <h2 class='product-detail title'>
+            {{product.name}}
+        </h2>
+        <h3 class='product-detail price'>
+            ${{product.price}}
+        </h3>
+        <input class='product-detail select-input' type='number' min=1 max=20 [(ngModel)]='quantity'
+            (ngModelChange)='quantityChanged()'>
+        <button class='product-detail btn' (click)='removeFromCart()'>Remove</button>
+    </div>
+</div>
