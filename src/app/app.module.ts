@@ -1,20 +1,20 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { ProductListComponent } from './product-list/product-list.component';
-import { ProductItemComponent } from './product-item/product-item.component';
-import { ProductItemDetailComponent } from './product-item-detail/product-item-detail.component';
-import { CartComponent } from './cart/cart.component';
-import { MessagesComponent } from './messages/messages.component';
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { ProductItemCartComponent } from './product-item-cart/product-item-cart.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { OrderComponent } from './order/order.component';
-import { OrderCompletedComponent } from './order-completed/order-completed.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { ProductListComponent } from "./components/product-list/product-list.component";
+import { ProductItemComponent } from "./components/product-item/product-item.component";
+import { ProductItemDetailComponent } from "./components/product-item-detail/product-item-detail.component";
+import { CartComponent } from "./components/cart/cart.component";
+import { MessagesComponent } from "./components/messages/messages.component";
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { ProductItemCartComponent } from "./components/product-item-cart/product-item-cart.component";
+import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
+import { OrderComponent } from "./components/order/order.component";
+import { OrderCompletedComponent } from "./components/order-completed/order-completed.component";
 
 @NgModule({
   declarations: [
@@ -27,16 +27,16 @@ import { OrderCompletedComponent } from './order-completed/order-completed.compo
     ProductItemCartComponent,
     NavBarComponent,
     OrderComponent,
-    OrderCompletedComponent
+    OrderCompletedComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     FlexLayoutModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
