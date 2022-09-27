@@ -26,17 +26,10 @@ export class ProductItemComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onSelect(): void {
-    this.log(`select product: ${this.product?.name}`);
-  }
+  onSelect(): void {}
 
   addToCart() {
-    this.log(`Add to cart ${this.selectInput} ${this.product?.name}`);
     this.cartService.add(this.product.id, this.selectInput);
     alert(`${this.selectInput} ${this.product.name} added to cart!`);
-  }
-
-  private log(message: string) {
-    this.messageService.add(`ProductItemComponent: ${message}`);
   }
 }

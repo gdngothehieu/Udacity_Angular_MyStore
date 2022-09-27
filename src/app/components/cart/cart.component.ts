@@ -22,7 +22,6 @@ export class CartComponent implements OnInit {
   ngOnInit(): void {
     this.cart = this.cartService.getAll();
     this.productService.getAll().subscribe((data) => {
-      this.log(`Got products!`);
       this.products = data;
     });
   }
@@ -33,9 +32,5 @@ export class CartComponent implements OnInit {
 
   getTotalPrice(): number {
     return this.cartService.getTotalPrice();
-  }
-
-  private log(message: string) {
-    this.messageService.add(`CartComponent: ${message}`);
   }
 }
