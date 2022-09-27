@@ -30,6 +30,6 @@ export class ProductItemComponent implements OnInit {
 
   addToCart() {
     this.cartService.add(this.product.id, this.selectInput);
-    alert(`${this.selectInput} ${this.product.name} added to cart!`);
+    alert(`Product added`);
   }
 }

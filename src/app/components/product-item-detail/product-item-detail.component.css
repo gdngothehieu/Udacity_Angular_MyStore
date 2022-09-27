@@ -2,7 +2,7 @@
   list-style-type: none;
   width: 320px;
   border-radius: 10px;
-  border: 1px solid #33B5E5;
+  border: 1px solid green;
 } 
 
 .product-container {
@@ -37,7 +37,9 @@
   align-items: center;
   margin-top: 64px;
 }
-
+.btn {
+  background-color: black;
+}
 .back-link {
   margin-top: 8px;
   color: cornflowerblue;

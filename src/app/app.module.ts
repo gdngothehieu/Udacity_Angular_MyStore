@@ -13,7 +13,6 @@ import { FormsModule } from "@angular/forms";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { ProductItemCartComponent } from "./components/product-item-cart/product-item-cart.component";
 import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
-import { OrderComponent } from "./components/order/order.component";
 import { OrderCompletedComponent } from "./components/order-completed/order-completed.component";
 
 @NgModule({
@@ -26,7 +25,6 @@ import { OrderCompletedComponent } from "./components/order-completed/order-comp
     MessagesComponent,
     ProductItemCartComponent,
     NavBarComponent,
-    OrderComponent,
     OrderCompletedComponent,
   ],
   imports: [
