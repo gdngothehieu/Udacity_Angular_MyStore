@@ -1,0 +1,37 @@
+<form #form="ngForm" (ngSubmit)="onSubmit()">
+  <h5>Full name</h5>
+  <input
+    type="text"
+    name="full_name"
+    required
+    minlength="3"
+    [(ngModel)]="full_name"
+    placeholder="David"
+  />
+  <h5>Your Address</h5>
+  <textarea
+    type="text"
+    name="address"
+    required
+    minlength="6"
+    [(ngModel)]="address"
+    placeholder="76 Lincoln, Winston Otario"
+  ></textarea>
+
+  <h5>Card Number:</h5>
+  <input
+    type="text"
+    name="credit_card"
+    required
+    minlength="16"
+    inputmode="numeric"
+    [(ngModel)]="credit_card"
+    placeholder="4256 6789 5678 2347"
+  />
+  <input
+    type="submit"
+    [disabled]="form.invalid || isEmpty()"
+    value="Submit"
+    class="btn btn-primary"
+  />
+</form>

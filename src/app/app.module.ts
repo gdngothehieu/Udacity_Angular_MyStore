@@ -14,6 +14,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { ProductItemCartComponent } from "./components/product-item-cart/product-item-cart.component";
 import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
 import { OrderCompletedComponent } from "./components/order-completed/order-completed.component";
+import { OrderComponent } from "./components/order/order.component";
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { OrderCompletedComponent } from "./components/order-completed/order-comp
     ProductItemCartComponent,
     NavBarComponent,
     OrderCompletedComponent,
+    OrderComponent,
   ],
   imports: [
     BrowserModule,
